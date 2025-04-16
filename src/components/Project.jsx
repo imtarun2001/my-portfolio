@@ -20,7 +20,6 @@ function Project({project}) {
             }
         </span>
       </div>
-            <br />
       <div className="hover:text-blue-600">
         {
             dropdown && <a href={project.projectUrl} target="_blank" className="flex justify-between items-center">View <IoOpenOutline /></a>

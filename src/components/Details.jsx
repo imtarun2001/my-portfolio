@@ -132,20 +132,21 @@ function Details() {
   const [dropdown, setDropdown] = useState(false);
 
   return (
-    <div className="bg-gradient-to-t from-green-600 via-gray-200 to-orange-600 text-rose-50 flex flex-col justify-around items-start gap-2.5 w-full p-1">
+    // <div className="bg-gradient-to-t from-green-600 via-gray-200 to-orange-600 text-rose-50 flex flex-col justify-around items-start gap-2.5 w-full p-1">
+    <div className="bg-gradient-to-r from-[#c9f6f9] via-[#1eeef9] to-[#27a1a3] text-rose-50 flex flex-col justify-around items-start gap-2.5 w-full p-1">
       <div className="w-full flex flex-col justify-end items-center p-1.5">
-        <div className="w-full flex justify-end items-center">
+        <div className="w-full flex justify-start items-center">
         <button
-          className="flex justify-between items-center text-[2.5vw] sm:text-[1.5vw] text-white bg-gradient-to-br from-gray-200 via-gray-500 to-gray-200 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 px-4 py-2 focus:outline-none"
-          onMouseEnter={() => setDropdown(!dropdown)}
-          onMouseLeave={() => setDropdown(!dropdown)}
+          className="flex justify-between items-center text-[2.5vw] sm:text-[1.5vw] text-white bg-gradient-to-br from-green-400 via-emerald-300 to-gray-600 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 px-4 py-2 focus:outline-none"
+          onMouseEnter={() => setDropdown(true)}
+          onMouseLeave={() => setDropdown(false)}
         >
           Contact me {dropdown ? <RiArrowDropDownLine /> : <RiArrowDropRightLine />}
         </button>
         </div>
 
         <div
-          className={`w-full text-[2.5vw] sm:text-[1.5vw] font-montserrat rounded-xl flex flex-col justify-between items-center sm:flex-row sm:justify-center sm:items-center sm:gap-5 xl:justify-around text-zinc-900 sm:bg-gradient-to-l from-blue-300 via-blue-500 to-blue-700 p-2.5 transition-all duration-1000 ease-in-out ${
+          className={`w-full text-[2.5vw] sm:text-[1.5vw] font-montserrat rounded-xl flex flex-col justify-between items-center sm:flex-row sm:justify-center sm:items-center sm:gap-5 xl:justify-around text-zinc-500 text-shadow-2xs text-shadow-black sm:bg-white shadow-2xl shadow-black p-2.5 transition-all duration-1000 ease-in-out ${
             dropdown ? 'scale-100' : 'scale-0'
           }`}
         >
@@ -172,11 +173,11 @@ function Details() {
           <div className="text-[2.6vw] font-montserrat text-black animate-pulse">
             Hey there, welcome to my portfolio!
           </div>
-          <div className="text-blue-900 text-[5vw] font-montserrat">
+          <div className="text-blue-800 text-[5vw] font-montserrat">
             <span>I am </span>
             {details.name}
           </div>
-          <div className="flex justify-start items-center text-[2.4vw] text-emerald-900 font-montserrat">
+          <div className="flex justify-start items-center text-[2.4vw] text-emerald-600 font-montserrat">
             <FcGlobe className="animate-spin" />&nbsp;
             <span>{details.role}</span>
           </div>
@@ -189,7 +190,7 @@ function Details() {
           />
       </div>
 
-      <div className="text-[1.3vw] sm:text-[1vw] font-montserrat min-w-full sm:w-[70%] text-center">
+      <div className="text-[1.3vw] sm:text-[1vw] font-montserrat min-w-full sm:w-[70%] text-black text-center">
         <TypeAnimation
           sequence={[details.summary, 2000, '', 2000]}
           repeat={Infinity}

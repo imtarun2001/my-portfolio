@@ -1,31 +1,39 @@
 
 export const myDetails = {
     name: "Tarun Kumar Behera",
-    role: "Front-end Developer",
+    role: "MERN Stack Developer 👨‍💻",
     dob: "31st October 2001",
     email: "tarunkumarbehera8249@gmail.com",
     phone: "+91 8249390690",
     address: "Cuttack, Odisha, 754025",
-    summary: "A passionate, detail-oriented front end web developer with expertise in JavaScript, ReactJS and ExpressJS.Proficient in building dynamic web applications.",
+    summary: "A passionate and detail-oriented MERN stack developer with expertise in JavaScript and It's various libraries and frameworks for building dynamic web applications.",
     photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
 }
 
 export const mySkills = [
     {
-        skillCategory: "Web, Libraries & Frameworks",
-        skills: ['React','Express','HTML5','CSS3','Tailwind']
+        skillCategory: "Libraries & Frameworks",
+        skills: ['React','Redux','Express','Node.js']
+    },
+    {
+        skillCategory: "Web building technologies",
+        skills: ['Html','Css','Tailwind','Sass']
     },
     {
         skillCategory: "Programming and Scripting Languages",
         skills: ['JavaScript','Java','C']
     },
     {
-        skillCategory: "Databases & Tools",
-        skills: ['MongoDB','MySQL','Git']
+        skillCategory: "Concepts",
+        skills: ['Data Structures and Algorithms','Object Oriented Programming','Software Engineering','Git']
     },
     {
-        skillCategory: "Concepts",
-        skills: ['Data Structures and Algorithms','Object Oriented Programming','Software Engineering']
+        skillCategory: "Database Tools & Workbenches",
+        skills: ['MongoDB Compass','MongoDB Atlas','MySQL','GitHub','Microsoft office']
+    },
+    {
+        skillCategory: "AI Tools",
+        skills: ['ChatGPT','Gemini','Copilot']
     },
     {
         skillCategory: "Soft Skills",
