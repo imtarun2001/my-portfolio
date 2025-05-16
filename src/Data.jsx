@@ -6,7 +6,7 @@ export const myDetails = {
     email: "tarunkumarbehera8249@gmail.com",
     phone: "+91 8249390690",
     address: "Cuttack, Odisha, 754025",
-    summary: "A passionate and detail-oriented MERN stack developer with expertise in JavaScript and It's various libraries and frameworks for building dynamic web applications.",
+    summary: "A passionate and detail-oriented Frontend web developer with expertise in JavaScript and It's various libraries and frameworks for building dynamic web applications.",
     photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
 }
 
@@ -20,8 +20,8 @@ export const mySkills = [
         skills: ['Html','Css','Tailwind','Sass','Bootstrap']
     },
     {
-        skillCategory: "Programming and Scripting Languages",
-        skills: ['JavaScript','Java','C']
+        skillCategory: "Scripting Language",
+        skills: ['JavaScript']
     },
     {
         skillCategory: "Concepts",
