@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="w-full text-white py-6 px-4 mt-12">
+    <footer className="w-full text-white py-6 px-4 border-t border-white mt-12">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center gap-8">
         
         {/* Social Icons */}

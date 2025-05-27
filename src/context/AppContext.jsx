@@ -9,9 +9,9 @@ export function AppContextProvider({children}) {
     const [certificates,setCertificates] = useState(myCertificates);
     const [education,setEducation] = useState(myEducation);
     const [projects,setProjects] = useState(myProjects);
-    const [skills,setSkills] = useState(mySkills);
+    const [myskills,setMyskills] = useState(mySkills);
 
-    const datas = {details,setDetails,certificates,setCertificates,education,setEducation,projects,setProjects,skills,setSkills};
+    const datas = {details,setDetails,certificates,setCertificates,education,setEducation,projects,setProjects,myskills,setMyskills};
 
     return <AppContext.Provider value={datas}>
         {children}

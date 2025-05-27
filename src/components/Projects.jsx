@@ -10,7 +10,7 @@ function Projects() {
     <div className="w-full flex flex-col items-center gap-6 px-4 py-8">
       <Titles indexValue={0} />
 
-      <div className="w-full max-w-7xl flex gap-4 overflow-x-scroll py-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 place-items-center gap-[2rem] py-[2rem] overflow-y-scroll">
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}

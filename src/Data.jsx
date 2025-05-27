@@ -1,3 +1,34 @@
+import { FaReact } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaDatabase } from "react-icons/fa";
+import { SiLoopback } from "react-icons/si";
+import { FcEngineering } from "react-icons/fc";
+import { FaGitAlt } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { FaGithub } from "react-icons/fa";
+import { FaMicrosoft } from "react-icons/fa";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { RiGeminiFill } from "react-icons/ri";
+import { SiGithubcopilot } from "react-icons/si";
+import { RiTeamFill } from "react-icons/ri";
+import { FcClock } from "react-icons/fc";
+import { GiSwordClash } from "react-icons/gi";
+import StudyNotionUi from './assets/studynotionUi.png'
+import FitnessClubUi from './assets/fitnessclubUi.png'
+import ShoppyUi from './assets/shoppyUi.png'
+import FlipzonUi from './assets/flipzonUi.png'
+import EcomzyUi from './assets/ecomzyUi.png'
+import TopCoursesUi from './assets/topcoursesUi.png'
+import AnimalsUi from './assets/animalsUi.png'
+import KiitLogo from './assets/kiit_logo.png'
+import KiitImage from './assets/kiit_image.webp'
 
 export const myDetails = {
     name: "Tarun Kumar Behera",
@@ -13,31 +44,148 @@ export const myDetails = {
 export const mySkills = [
     {
         skillCategory: "Libraries & Frameworks",
-        skills: ['React','Redux','Express','Node.js']
+        skills: [
+            {
+                skill: 'React',
+                icon: <FaReact/>,
+                color: 'cyan'
+            },
+            {
+                skill: 'Redux',
+                icon: <SiRedux/>,
+                color: 'violet'
+            },
+            {
+                skill: 'Express',
+                icon: <SiExpress/>,
+                color: 'yellow'
+            },
+            {
+                skill: 'Node.js',
+                icon: <FaNode/>,
+                color: 'green'
+            }
+        ]
     },
     {
         skillCategory: "Web building technologies",
-        skills: ['Html','Css','Tailwind','Sass','Bootstrap']
+        skills: [
+            {
+                skill: 'Html',
+                icon: <FaHtml5/>,
+                color: 'coral'
+            },
+            {
+                skill: 'Css',
+                icon: <FaCss3Alt/>,
+                color: 'royalblue'
+            },
+            {
+                skill: 'Tailwind',
+                icon: <RiTailwindCssFill/>,
+                color: 'aqua'
+            }
+        ]
     },
     {
         skillCategory: "Scripting Language",
-        skills: ['JavaScript']
+        skills: [
+            {
+                skill: 'Javascript',
+                icon: <IoLogoJavascript/>,
+                color: 'yellow'
+            }
+        ]
     },
     {
         skillCategory: "Concepts",
-        skills: ['Data Structures and Algorithms','Object Oriented Programming','Software Engineering','Git']
+        skills: [
+            {
+                skill: 'Data Structures and Algorithms',
+                icon: <FaDatabase/>,
+                color: 'hotpink'
+            },
+            {
+                skill: 'Object Oriented Programming',
+                icon: <SiLoopback/>,
+                color: 'blue'
+            },
+            {
+                skill: 'Software Engineering',
+                icon: <FcEngineering/>,
+                color: ''
+            },
+            {
+                skill: 'Git',
+                icon: <FaGitAlt/>,
+                color: 'red'
+            }
+        ]
     },
     {
         skillCategory: "Database Tools & Workbenches",
-        skills: ['MongoDB Compass','MongoDB Atlas','MySQL','GitHub','Microsoft office']
+        skills: [
+            {
+                skill: 'MongoDB',
+                icon: <SiMongodb/>,
+                color: 'springgreen'
+            },
+            {
+                skill: 'MySQL',
+                icon: <GrMysql/>,
+                color: 'lightskyblue'
+            },
+            {
+                skill: 'GitHub',
+                icon: <FaGithub/>,
+                color: 'black'
+            },
+            {
+                skill: 'Microsoft office',
+                icon: <FaMicrosoft/>,
+                color: 'dodgerblue'
+            }
+        ]
     },
     {
         skillCategory: "AI Tools",
-        skills: ['ChatGPT','Gemini','Copilot']
+        skills: [
+            {
+                skill: 'ChatGPT',
+                icon: <GiArtificialIntelligence/>,
+                color: 'lightseagreen'
+            },
+            {
+                skill: 'Gemini',
+                icon: <RiGeminiFill/>,
+                color: 'mediumorchid'
+            },
+            {
+                skill: 'Copilot',
+                icon: <SiGithubcopilot/>,
+                color: 'slategrey'
+            }
+        ]
     },
     {
         skillCategory: "Soft Skills",
-        skills: ['Team Work','Time Management','Negotiation']
+        skills: [
+            {
+                skill: 'Team Work',
+                icon: <RiTeamFill/>,
+                color: 'darkviolet'
+            },
+            {
+                skill: 'Time Management',
+                icon: <FcClock/>,
+                color: ''
+            },
+            {
+                skill: 'Negotiation',
+                icon: <GiSwordClash/>,
+                color: 'red'
+            }
+        ]
     }
 ];
 
@@ -71,56 +219,61 @@ export const myCertificates = [
 
 export const myProjects = [
     {
+        projectTitle: "Studynotion",
+        uiUrl: "https://studynotion-seven-sand.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/studynotion",
+        ui: StudyNotionUi,
+        projectDescription: ""
+    },
+    {
         projectTitle: "Fitness Club",
-        projectUrl: "https://fitness-club-taruns-projects-67c133f6.vercel.app/",
+        uiUrl: "https://fitness-club-taruns-projects-67c133f6.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/fitness-club",
+        ui: FitnessClubUi,
         projectDescription: ""
     },
     {
         projectTitle: "Shoppy",
-        projectUrl: "https://shoppy-taruns-projects-67c133f6.vercel.app/",
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Ecomzy",
-        projectUrl: "https://ecomzy-taruns-projects-67c133f6.vercel.app/",
+        uiUrl: "https://shoppy-taruns-projects-67c133f6.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/shoppy",
+        ui: ShoppyUi,
         projectDescription: ""
     },
     {
         projectTitle: "Flipzon",
-        projectUrl: "https://imtarun2001.github.io/shoppingsite/",
+        uiUrl: "https://flipzon-6kukuqz61-taruns-projects-67c133f6.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/flipzon",
+        ui: FlipzonUi,
         projectDescription: ""
     },
     {
-        projectTitle: "Ed-Tech Institute",
-        projectUrl: "https://imtarun2001.github.io/edtechinstitute/",
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Tech Blogs",
-        projectUrl: "https://imtarun2001.github.io/blogs/",
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Gif Generator",
-        projectUrl: "https://imtarun2001.github.io/gifgenerator/",
+        projectTitle: "Ecomzy",
+        uiUrl: "https://ecomzy-taruns-projects-67c133f6.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/ecomzy",
+        ui: EcomzyUi,
         projectDescription: ""
     },
     {
         projectTitle: "Top Courses",
-        projectUrl: "https://imtarun2001.github.io/topcourses/",
+        uiUrl: "https://imtarun2001.github.io/topcourses/",
+        codeUrl: "https://github.com/imtarun2001/topcourses",
+        ui: TopCoursesUi,
         projectDescription: ""
     },
-    {
-        projectTitle: "Animals",
-        projectUrl: "https://imtarun2001.github.io/animalscard/",
-        projectDescription: ""
-    }
+    // {
+    //     projectTitle: "Animals",
+    //     uiUrl: "https://imtarun2001.github.io/animalscard/",
+    //     codeUrl: "https://github.com/imtarun2001/animalscard",
+    //     ui: AnimalsUi,
+    //     projectDescription: ""
+    // }
 ];
 
 export const myEducation = {
     instituteName: "Kalinga Institute of Industrial Technology",
-    instituteLogo: "https://logowik.com/content/uploads/images/kalinga-institute-of-industrial-technology-kiit6644.jpg",
-    degree: "Post Grduation (Master of Computer Applications)",
+    instituteLogo: KiitLogo,
+    instituteImage: KiitImage,
+    degree: "Post Graduation (Master of Computer Applications)",
     cgpa: "7.95 / 10",
     duration: "October 2022 - April 2024",
     location: "Bhubaneshwar, Odisha"
