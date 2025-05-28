@@ -31,7 +31,7 @@ import KiitLogo from './assets/kiit_logo.png'
 import KiitImage from './assets/kiit_image.webp'
 
 export const myDetails = {
-    name: "Tarun Kumar Behera",
+    name: "I am Tarun Kumar Behera",
     role: "Frontend Web Developer 👨‍💻",
     dob: "31st October 2001",
     email: "tarunkumarbehera8249@gmail.com",
@@ -270,7 +270,7 @@ export const myProjects = [
 ];
 
 export const myEducation = {
-    instituteName: "Kalinga Institute of Industrial Technology",
+    instituteName: "Kalinga Institute of Industrial Technology (KIIT)",
     instituteLogo: KiitLogo,
     instituteImage: KiitImage,
     degree: "Post Graduation (Master of Computer Applications)",

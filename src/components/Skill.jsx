@@ -11,7 +11,7 @@ function Skill({ myskill, index }) {
   return (
     <div className="w-full font-sourcecode text-base sm:text-lg md:text-xl">
       <div
-        className="flex justify-between items-center border-b border-white cursor-pointer hover:text-gray-200 hover:font-bold"
+        className="flex justify-between items-center border-b border-white cursor-pointer hover:text-gray-600 hover:font-bold"
         onClick={() => setDropdown(!dropdown)}
       >
         <div className='text-[1.7rem]'>{myskill.skillCategory}</div>
