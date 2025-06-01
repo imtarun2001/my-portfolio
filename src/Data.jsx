@@ -32,12 +32,12 @@ import KiitImage from './assets/kiit_image.webp'
 
 export const myDetails = {
     name: "I am Tarun Kumar Behera",
-    role: "Frontend Web Developer 👨‍💻",
+    role: "MERN Stack Web Developer 👨‍💻",
     dob: "31st October 2001",
     email: "tarunkumarbehera8249@gmail.com",
     phone: "+91 8249390690",
     address: "Cuttack, Odisha, 754025",
-    summary: "A passionate and detail-oriented Frontend web developer with expertise in JavaScript and It's various libraries and frameworks for building dynamic web applications.",
+    summary: "An aspiring MERN stack developer having expertise in various JavaScript libraries and frameworks with strong communication and time management skills. Passionate about building scalable and dynamic web applications and eager to contribute to real-world projects in a collaborative team environment.",
     photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
 }
 
