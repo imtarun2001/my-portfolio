@@ -64,7 +64,7 @@ function Details() {
         </div>
       </div>
 
-      <div className="w-full text-sm sm:font-semibold sm:text-[1rem] text-gray-300 text-center font-normal px-2">
+      <div className="w-full text-sm sm:font-semibold sm:text-[1rem] text-gray-400 text-center font-normal px-2">
         {details.summary}
       </div>
 
