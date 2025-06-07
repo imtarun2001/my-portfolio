@@ -22,7 +22,7 @@ const Details = () => {
       {/* 1st section */}
       <div className='w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-[2rem] md:gap-0'>
         <div className='text-[2rem] bg-white px-[1rem] drop-shadow-lg drop-shadow-black'>PORT<span className='text-purple-700'>FOLIO</span></div>
-        <div className='flex justify-center uppercase items-center gap-[0.8rem] md:gap-[2.5rem]'>
+        <div className='flex justify-center uppercase items-center gap-[1.2rem] sm:gap-[2.5rem]'>
           {
             arrOfHeaders.map((header,index) => (
               <div key={index} className='hover:text-purple-700 text-[0.7rem] sm:text-[1rem] cursor-pointer'>
