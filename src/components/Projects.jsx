@@ -7,7 +7,7 @@ function Projects() {
   const { projects } = useContext(AppContext);
 
   return (
-    <div className="w-full flex flex-col items-center gap-6 px-4 py-8">
+    <div className="projects w-full flex flex-col items-center gap-6 px-4 py-8">
       <Titles indexValue={0} />
 
       <div className="w-full grid grid-cols-1 place-items-center gap-[3rem] sm:gap-[5rem] py-[2rem] overflow-y-scroll">

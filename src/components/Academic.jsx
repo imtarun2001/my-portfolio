@@ -8,7 +8,7 @@ function Academic() {
   const motionTransition = { type: 'spring', duration: 1.5 };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-6 sm:px-4 py-8">
+    <div className="academic w-full flex flex-col justify-center items-center gap-6 sm:px-4 py-8">
       <Titles indexValue={3} />
 
       <motion.div

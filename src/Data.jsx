@@ -26,19 +26,18 @@ import ShoppyUi from './assets/shoppyUi.png'
 import FlipzonUi from './assets/flipzonUi.png'
 import EcomzyUi from './assets/ecomzyUi.png'
 import TopCoursesUi from './assets/topcoursesUi.png'
-import AnimalsUi from './assets/animalsUi.png'
 import KiitLogo from './assets/kiit_logo.png'
 import KiitImage from './assets/kiit_image.webp'
 
 export const myDetails = {
-    name: "I am Tarun Kumar Behera",
-    role: "MERN Stack Web Developer 👨‍💻",
+    name: "Tarun Kumar Behera",
     dob: "31st October 2001",
     email: "tarunkumarbehera8249@gmail.com",
     phone: "+91 8249390690",
     address: "Cuttack, Odisha, 754025",
     summary: "An aspiring MERN stack developer having expertise in various JavaScript libraries and frameworks with strong communication and time management skills. Passionate about building scalable and dynamic web applications and eager to contribute to real-world projects in a collaborative team environment.",
-    photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
+    // photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
+    photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1749289789/portfolioNewDp_bg_removed_mqdh2e.png"
 }
 
 export const mySkills = [
@@ -58,7 +57,7 @@ export const mySkills = [
             {
                 skill: 'Express',
                 icon: <SiExpress/>,
-                color: 'yellow'
+                color: 'white'
             },
             {
                 skill: 'Node.js',
@@ -138,7 +137,7 @@ export const mySkills = [
             {
                 skill: 'GitHub',
                 icon: <FaGithub/>,
-                color: 'black'
+                color: 'white'
             },
             {
                 skill: 'Microsoft office',
