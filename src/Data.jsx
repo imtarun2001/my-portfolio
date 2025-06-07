@@ -35,7 +35,7 @@ export const myDetails = {
     email: "tarunkumarbehera8249@gmail.com",
     phone: "+91 8249390690",
     address: "Cuttack, Odisha, 754025",
-    summary: "An aspiring MERN stack developer having expertise in various JavaScript libraries and frameworks with strong communication and time management skills. Passionate about building scalable and dynamic web applications and eager to contribute to real-world projects in a collaborative team environment.",
+    summary: "having expertise in various JavaScript libraries and frameworks with strong communication and time management skills. Passionate about building scalable and dynamic web applications and eager to contribute to real-world projects in a collaborative team environment.",
     // photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
     photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1749289789/portfolioNewDp_bg_removed_mqdh2e.png"
 }
