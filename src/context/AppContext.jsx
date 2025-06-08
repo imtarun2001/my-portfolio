@@ -22,13 +22,22 @@ export function AppContextProvider({children}) {
         return () => window.removeEventListener("resize",handleResize);
     },[]);
 
+
+
+    const [lightmode,setLightmode] = useState(false);
+    const lightmodeHandler = () => {
+        setLightmode(prev => !prev);
+    }
+
     const datas = {
         details,setDetails,
         certificates,setCertificates,
         education,setEducation,
         projects,setProjects,
         myskills,setMyskills,
-        screenSize,setScreenSize
+        screenSize,setScreenSize,
+        lightmode,setLightmode,
+        lightmodeHandler
     };
 
     return <AppContext.Provider value={datas}>

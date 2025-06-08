@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 
 const Details = () => {
 
-  const {details} = useAppContext();
+  const {details,lightmode} = useAppContext();
 
   const [showup,setShowup] = useState(false);
 
@@ -20,11 +20,11 @@ const Details = () => {
   const transition = {type: 'normal', duration: 1};
 
   return (
-    <div className="details w-full md:h-screen p-[1rem] bg-gray-100 text-black tracking-wide flex flex-col justify-start sm:justify-between items-center gap-[1rem] sm:gap-0">
+    <div className={`details w-full p-[1rem] tracking-wide flex flex-col justify-start md::justify-between items-center gap-[1rem] md:gap-[3rem] ${lightmode ? `bg-white text-black` : `bg-black text-white`}`}>
 
       {/* 1st section */}
       <div className='w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-[2rem] md:gap-0'>
-        <motion.div  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={transition}  className='text-[2rem] bg-white px-[1rem] drop-shadow-lg drop-shadow-black'>PORT<span className='text-purple-700'>FOLIO</span></motion.div>
+        <motion.div  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={transition}  className={`text-[1rem] sm:text-[1.4rem] md:text-[2rem] ${lightmode ? `text-black bg-white px-[1rem] drop-shadow-lg drop-shadow-black` : `text-white bg-black px-[1rem] drop-shadow-lg drop-shadow-white`}`}>PORT<span className='text-purple-700'>FOLIO</span></motion.div>
         <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={transition}  className='flex justify-center uppercase items-center gap-[1.2rem] sm:gap-[2.5rem]'>
           {
             arrOfHeaders.map((header,index) => (
@@ -39,33 +39,33 @@ const Details = () => {
         </motion.div>
         <motion.div  initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={transition} >
           <a href="Tarun_Kumar_Behera_Resume_MERN_2025.pdf" download="Tarun_Kumar_Behera_Resume_MERN_2025.pdf">
-            <button className='flex justify-center items-center gap-[0.5rem] px-[1.2rem] py-[0.6rem] bg-purple-700 text-white font-semibold rounded-lg cursor-pointer drop-shadow-md drop-shadow-black'>Download CV <MdOutlineFileDownload className='text-2xl'/></button>
+            <button className='flex justify-center items-center gap-[0.5rem] lg:px-[1.2rem] px-[0.5rem] py-[0.3rem] md:py-[0.6rem] bg-purple-700 text-white font-semibold md:text-[0.7rem] lg:text-[1rem] rounded-lg cursor-pointer drop-shadow-md drop-shadow-black'>Download CV <MdOutlineFileDownload className='text-2xl'/></button>
           </a>
         </motion.div>
       </div>
 
 
       {/* 2nd section */}
-      <div className='w-full flex flex-col sm:flex-row justify-center items-center'>
-        <div className='relative w-full sm:w-1/3 flex justify-center items-center'>
-          <motion.img  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={transition}img src={details.photo} alt="" className='w-1/2 sm:w-2/3 z-10 translate-y-1 sm:translate-y-2'/>
+      <div className='w-full flex flex-col md:flex-row justify-center items-center'>
+        <div className='relative w-full sm:w-1/2 flex justify-center items-center'>
           <motion.div initial={{opacity:0,y:-100}} whileInView={{opacity:1,y:0}} transition={transition} className='h-[70%] rounded-t-full bg-purple-700 w-[45%] sm:w-[55%] absolute bottom-0'></motion.div>
-          <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={transition}   className='h-[60%] rounded-t-full bg-black w-[35%] sm:w-[45%] absolute bottom-0'></motion.div>
+          <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={transition}   className={`h-[60%] rounded-t-full ${lightmode ? `bg-black` : `bg-white`} w-[35%] sm:w-[45%] absolute bottom-0`}></motion.div>
+          <motion.img  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={transition}img src={details.photo} alt="" className='w-1/2 md:w-2/3 translate-y-1 sm:translate-y-2'/>
         </div>
-        <div className='w-full sm:w-2/3 flex flex-col justify-center sm:justify-start items-center'>
-          <motion.div  initial={{opacity:0}} whileInView={{opacity:1}} transition={transition} className='w-full text-center sm:text-justify text-[1rem]'>Hello Visitor 🙋‍♂️, I am</motion.div>
-          <motion.div  initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={transition} className='w-full text-center sm:text-justify text-[2rem] sm:text-[3rem] text-purple-700'>{details.name}</motion.div>
-          <div className='w-full text-center sm:text-justify text-[1rem] flex justify-start items-center gap-[0.5rem]'>
-            <div>and I am a</div>
-            <div className='text-emerald-600 text-[1.1rem] sm:text-[1.7rem] text-nowrap'>
+        <div className='w-full md:w-2/3 flex flex-col justify-center md:gap-[1rem] md:justify-start items-center'>
+          <motion.div  initial={{opacity:0}} whileInView={{opacity:1}} transition={transition} className='w-full text-center md:text-justify text-[1rem]'>Hello Visitor 🙋‍♂️, I am</motion.div>
+          <motion.div  initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={transition} className='w-full text-center md:text-justify text-[1.3rem] sm:text-[1.7rem] md:text-[2.3rem] lg:text-[3rem] text-purple-700'>{details.name}</motion.div>
+          <div className='w-full text-center md:text-justify flex md:justify-start justify-center items-center gap-[0.5rem]'>
+            <div className='text-[0.8rem] sm:text-[1rem]'>and I am a</div>
+            <div className='text-emerald-600 text-[1rem] sm:text-[1.3rem] text-nowrap'>
               <TypeAnimation
-              sequence={[2000,"MERN Stack Web Developer",2000,"",1000,"Frontend Web Developer",2000,"",1000,"Backend Web Developer",2000,"",1000]}
+              sequence={[2000,"MERN Stack Developer",2000,"",1000,"Frontend Web Developer",2000,"",1000,"Backend Web Developer",2000,"",1000]}
               repeat={Infinity}
               wrapper="span"
             />
             </div>
           </div>
-          <div className='text-justify text-[0.8rem] text-gray-600'>
+          <div className='text-center md:text-justify text-[0.8rem] text-gray-600'>
             {details.summary}
           </div>
         </div>

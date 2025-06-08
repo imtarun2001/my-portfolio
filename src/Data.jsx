@@ -1,25 +1,15 @@
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { FaNode } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaDatabase } from "react-icons/fa";
-import { SiLoopback } from "react-icons/si";
-import { FcEngineering } from "react-icons/fc";
-import { FaGitAlt } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
+import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub,FaMicrosoft } from "react-icons/fa";
+import { SiRedux,SiExpress,SiAxios,SiLoopback,SiMongodb,SiGithubcopilot, SiPostman } from "react-icons/si";
+import { RiTailwindCssFill,RiGeminiFill,RiTeamFill } from "react-icons/ri";
+import { GiArtificialIntelligence,GiSwordClash } from "react-icons/gi";
+import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
+import { FcEngineering,FcClock } from "react-icons/fc";
+import { VscRepoFetch } from "react-icons/vsc";
+import { GoVersions } from "react-icons/go";
+import { DiResponsive } from "react-icons/di";
+import { LuGitPullRequestCreateArrow } from "react-icons/lu";
 import { GrMysql } from "react-icons/gr";
-import { FaGithub } from "react-icons/fa";
-import { FaMicrosoft } from "react-icons/fa";
-import { GiArtificialIntelligence } from "react-icons/gi";
-import { RiGeminiFill } from "react-icons/ri";
-import { SiGithubcopilot } from "react-icons/si";
-import { RiTeamFill } from "react-icons/ri";
-import { FcClock } from "react-icons/fc";
-import { GiSwordClash } from "react-icons/gi";
+import { BiLogoVisualStudio } from "react-icons/bi";
 import StudyNotionUi from './assets/studynotionUi.png'
 import FitnessClubUi from './assets/fitnessclubUi.png'
 import ShoppyUi from './assets/shoppyUi.png'
@@ -36,7 +26,6 @@ export const myDetails = {
     phone: "+91 8249390690",
     address: "Cuttack, Odisha, 754025",
     summary: "having expertise in various JavaScript libraries and frameworks with strong communication and time management skills. Passionate about building scalable and dynamic web applications and eager to contribute to real-world projects in a collaborative team environment.",
-    // photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1744426208/portfolio_dp_g4m2rc.jpg"
     photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1749289789/portfolioNewDp_bg_removed_mqdh2e.png"
 }
 
@@ -63,6 +52,16 @@ export const mySkills = [
                 skill: 'Node.js',
                 icon: <FaNode/>,
                 color: 'green'
+            },
+            {
+                skill: 'Axios',
+                icon: <SiAxios/>,
+                color: 'gold'
+            },
+            {
+                skill: 'Fetch',
+                icon: <VscRepoFetch/>,
+                color: 'red'
             }
         ]
     },
@@ -102,7 +101,7 @@ export const mySkills = [
             {
                 skill: 'Data Structures and Algorithms',
                 icon: <FaDatabase/>,
-                color: 'hotpink'
+                color: 'fuchsia'
             },
             {
                 skill: 'Object Oriented Programming',
@@ -118,11 +117,26 @@ export const mySkills = [
                 skill: 'Git',
                 icon: <FaGitAlt/>,
                 color: 'red'
+            },
+            {
+                skill: 'Version Control',
+                icon: <GoVersions/>,
+                color: 'green'
+            },
+            {
+                skill: 'Responsive design',
+                icon: <DiResponsive className="text-[2rem]"/>,
+                color: 'aliceblue'
+            },
+            {
+                skill: 'CRUD operations with REST APIs (HTTP methods)',
+                icon: <LuGitPullRequestCreateArrow/>,
+                color: 'cyan'
             }
         ]
     },
     {
-        skillCategory: "Database Tools & Workbenches",
+        skillCategory: "Tools & Workbenches",
         skills: [
             {
                 skill: 'MongoDB',
@@ -131,8 +145,8 @@ export const mySkills = [
             },
             {
                 skill: 'MySQL',
-                icon: <GrMysql/>,
-                color: 'lightskyblue'
+                icon: <GrMysql className="font-extrabold"/>,
+                color: 'blue'
             },
             {
                 skill: 'GitHub',
@@ -140,10 +154,25 @@ export const mySkills = [
                 color: 'white'
             },
             {
+                skill: 'Vercel',
+                icon: <IoLogoVercel/>,
+                color: 'white'
+            },
+            {
+                skill: 'Postman',
+                icon: <SiPostman/>,
+                color: 'coral'
+            },
+            {
+                skill: 'VS Code',
+                icon: <BiLogoVisualStudio/>,
+                color: 'royalblue'
+            },
+            {
                 skill: 'Microsoft office',
                 icon: <FaMicrosoft/>,
                 color: 'dodgerblue'
-            }
+            },
         ]
     },
     {
