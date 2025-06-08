@@ -24,7 +24,7 @@ const Details = () => {
 
       {/* 1st section */}
       <div className='w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-[2rem] md:gap-0'>
-        <motion.div  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={transition}  className={`text-[1rem] sm:text-[1.4rem] md:text-[2rem] ${lightmode ? `text-black bg-white px-[1rem] drop-shadow-lg drop-shadow-black` : `text-white bg-black px-[1rem] drop-shadow-lg drop-shadow-white`}`}>PORT<span className='text-purple-700'>FOLIO</span></motion.div>
+        <motion.div  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={transition}  className={`text-[1.4rem] md:text-[2rem] ${lightmode ? `text-black bg-white px-[1rem] drop-shadow-lg drop-shadow-black` : `text-white bg-black px-[1rem] drop-shadow-lg drop-shadow-white`}`}>PORT<span className='text-purple-700'>FOLIO</span></motion.div>
         <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={transition}  className='flex justify-center uppercase items-center gap-[1.2rem] sm:gap-[2.5rem]'>
           {
             arrOfHeaders.map((header,index) => (
@@ -55,7 +55,7 @@ const Details = () => {
         <div className='w-full md:w-2/3 flex flex-col justify-center md:gap-[1rem] md:justify-start items-center'>
           <motion.div  initial={{opacity:0}} whileInView={{opacity:1}} transition={transition} className='w-full text-center md:text-justify text-[1rem]'>Hello Visitor 🙋‍♂️, I am</motion.div>
           <motion.div  initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={transition} className='w-full text-center md:text-justify text-[1.3rem] sm:text-[1.7rem] md:text-[2.3rem] lg:text-[3rem] text-purple-700'>{details.name}</motion.div>
-          <div className='w-full text-center md:text-justify flex md:justify-start justify-center items-center gap-[0.5rem]'>
+          <div className='w-full text-center md:text-justify flex flex-col md:flex-row md:justify-start justify-center items-center gap-[0.5rem]'>
             <div className='text-[0.8rem] sm:text-[1rem]'>and I am a</div>
             <div className='text-emerald-600 text-[1rem] sm:text-[1.3rem] text-nowrap'>
               <TypeAnimation
