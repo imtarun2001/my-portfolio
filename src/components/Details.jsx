@@ -74,8 +74,8 @@ const Details = () => {
 
       {/* 3rd section */}
       <div className='w-full flex flex-col justify-center items-center sm:items-start'>
-        <div className={`flex flex-col justify-center items-center gap-[1rem] px-[1rem] py-[0.6rem] rounded-md bg-black text-white ${showup ? `opacity-100` : `opacity-0`}`}>
-          <div className='flex justify-center items-center text-center gap-[0.2rem] text-[1rem]'><MdCall/>+91 9249390690</div>
+        <div className={`flex flex-col justify-center items-center gap-[0.5rem] px-[1rem] py-[0.6rem] rounded-md ${showup ? `opacity-100` : `opacity-0`} ${lightmode ? `bg-black text-white` : `bg-white text-black`}`}>
+          <div className='flex justify-center items-center text-center gap-[0.2rem] text-[1rem]'><MdCall/>+91 8249390690</div>
           <div className='flex justify-center items-center text-center gap-[0.2rem] text-[1rem]'><IoMdMail/>tarunkumarbehera8249@gmail.com</div>
         </div>
         <div className='w-full px-[1rem] py-[0.5rem] flex justify-between items-center text-white'>
