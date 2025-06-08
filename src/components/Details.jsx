@@ -20,7 +20,7 @@ const Details = () => {
   const transition = {type: 'normal', duration: 1};
 
   return (
-    <div className="details w-full sm:h-screen p-[1rem] bg-gray-100 text-black tracking-wide flex flex-col justify-start sm:justify-between items-center gap-[1rem] sm:gap-0">
+    <div className="details w-full md:h-screen p-[1rem] bg-gray-100 text-black tracking-wide flex flex-col justify-start sm:justify-between items-center gap-[1rem] sm:gap-0">
 
       {/* 1st section */}
       <div className='w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-[2rem] md:gap-0'>
