@@ -28,10 +28,10 @@ const Details = () => {
         <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={transition}  className='flex justify-center uppercase items-center gap-[1.2rem] sm:gap-[2.5rem]'>
           {
             arrOfHeaders.map((header,index) => (
-              <div key={index} className='hover:text-purple-700 text-[0.7rem] sm:text-[1rem] cursor-pointer'>
+              <div key={index} className='relative cursor-pointer'>
                 <Link to={header} spy={true} smooth={true}>
-                  <div>{header}</div>
-                  <div className="w-full border-2 border-purple-700"></div>
+                  <div className={`hover:text-purple-700 border-b-4 ${lightmode ? `border-b-gray-400` : `border-b-white`} text-[0.7rem] sm:text-[1rem]`}>{header}</div>
+                  <div className='absolute bottom-0 w-1/2 border-2 border-purple-700 z-10'></div>
                 </Link>
               </div>
             ))

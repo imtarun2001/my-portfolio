@@ -1,4 +1,4 @@
-import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub,FaMicrosoft } from "react-icons/fa";
+import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub } from "react-icons/fa";
 import { SiRedux,SiExpress,SiAxios,SiLoopback,SiMongodb,SiGithubcopilot, SiPostman } from "react-icons/si";
 import { RiTailwindCssFill,RiGeminiFill,RiTeamFill } from "react-icons/ri";
 import { GiArtificialIntelligence,GiSwordClash } from "react-icons/gi";
@@ -8,13 +8,11 @@ import { VscRepoFetch } from "react-icons/vsc";
 import { GoVersions } from "react-icons/go";
 import { DiResponsive } from "react-icons/di";
 import { LuGitPullRequestCreateArrow } from "react-icons/lu";
-import { GrMysql } from "react-icons/gr";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import StudyNotionUi from './assets/studynotionUi.png'
 import FitnessClubUi from './assets/fitnessclubUi.png'
 import ShoppyUi from './assets/shoppyUi.png'
 import FlipzonUi from './assets/flipzonUi.png'
-import EcomzyUi from './assets/ecomzyUi.png'
 import TopCoursesUi from './assets/topcoursesUi.png'
 import KiitLogo from './assets/kiit_logo.png'
 import KiitImage from './assets/kiit_image.webp'
@@ -51,7 +49,7 @@ export const mySkills = [
             {
                 skill: 'Node.js',
                 icon: <FaNode/>,
-                color: 'green'
+                color: 'lime'
             },
             {
                 skill: 'Axios',
@@ -66,7 +64,7 @@ export const mySkills = [
         ]
     },
     {
-        skillCategory: "Web building technologies",
+        skillCategory: "Web technologies",
         skills: [
             {
                 skill: 'Html',
@@ -76,12 +74,12 @@ export const mySkills = [
             {
                 skill: 'Css',
                 icon: <FaCss3Alt/>,
-                color: 'royalblue'
+                color: 'mediumblue'
             },
             {
                 skill: 'Tailwind',
                 icon: <RiTailwindCssFill/>,
-                color: 'aqua'
+                color: 'aquamarine'
             }
         ]
     },
@@ -89,7 +87,7 @@ export const mySkills = [
         skillCategory: "Scripting Language",
         skills: [
             {
-                skill: 'Javascript',
+                skill: 'JavaScript',
                 icon: <IoLogoJavascript/>,
                 color: 'yellow'
             }
@@ -106,12 +104,12 @@ export const mySkills = [
             {
                 skill: 'Object Oriented Programming',
                 icon: <SiLoopback/>,
-                color: 'blue'
+                color: 'lightseagreen'
             },
             {
                 skill: 'Software Engineering',
                 icon: <FcEngineering/>,
-                color: ''
+                color: 'coral'
             },
             {
                 skill: 'Git',
@@ -119,19 +117,19 @@ export const mySkills = [
                 color: 'red'
             },
             {
-                skill: 'Version Control',
-                icon: <GoVersions/>,
-                color: 'green'
-            },
-            {
                 skill: 'Responsive design',
                 icon: <DiResponsive className="text-[2rem]"/>,
-                color: 'aliceblue'
+                color: 'white'
+            },
+            {
+                skill: 'Version Control',
+                icon: <GoVersions/>,
+                color: 'steelblue'
             },
             {
                 skill: 'CRUD operations with REST APIs (HTTP methods)',
                 icon: <LuGitPullRequestCreateArrow/>,
-                color: 'cyan'
+                color: 'gold'
             }
         ]
     },
@@ -144,11 +142,6 @@ export const mySkills = [
                 color: 'springgreen'
             },
             {
-                skill: 'MySQL',
-                icon: <GrMysql className="font-extrabold"/>,
-                color: 'blue'
-            },
-            {
                 skill: 'GitHub',
                 icon: <FaGithub/>,
                 color: 'white'
@@ -156,7 +149,7 @@ export const mySkills = [
             {
                 skill: 'Vercel',
                 icon: <IoLogoVercel/>,
-                color: 'white'
+                color: 'aliceblue'
             },
             {
                 skill: 'Postman',
@@ -167,11 +160,6 @@ export const mySkills = [
                 skill: 'VS Code',
                 icon: <BiLogoVisualStudio/>,
                 color: 'royalblue'
-            },
-            {
-                skill: 'Microsoft office',
-                icon: <FaMicrosoft/>,
-                color: 'dodgerblue'
             },
         ]
     },
@@ -186,12 +174,12 @@ export const mySkills = [
             {
                 skill: 'Gemini',
                 icon: <RiGeminiFill/>,
-                color: 'mediumorchid'
+                color: 'orchid'
             },
             {
                 skill: 'Copilot',
                 icon: <SiGithubcopilot/>,
-                color: 'slategrey'
+                color: 'aliceblue'
             }
         ]
     },
@@ -206,7 +194,7 @@ export const mySkills = [
             {
                 skill: 'Time Management',
                 icon: <FcClock/>,
-                color: ''
+                color: 'turquoise'
             },
             {
                 skill: 'Negotiation',
@@ -272,13 +260,6 @@ export const myProjects = [
         uiUrl: "https://flipzon-6kukuqz61-taruns-projects-67c133f6.vercel.app/",
         codeUrl: "https://github.com/imtarun2001/flipzon",
         ui: FlipzonUi,
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Ecomzy",
-        uiUrl: "https://ecomzy-taruns-projects-67c133f6.vercel.app/",
-        codeUrl: "https://github.com/imtarun2001/ecomzy",
-        ui: EcomzyUi,
         projectDescription: ""
     },
     {
