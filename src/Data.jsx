@@ -159,7 +159,7 @@ export const mySkills = [
             {
                 skill: 'VS Code',
                 icon: <BiLogoVisualStudio/>,
-                color: 'royalblue'
+                color: 'dodgeblue'
             },
         ]
     },
