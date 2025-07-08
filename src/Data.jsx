@@ -1,4 +1,4 @@
-import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub } from "react-icons/fa";
+import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub, FaFigma } from "react-icons/fa";
 import { SiRedux,SiExpress,SiAxios,SiLoopback,SiMongodb,SiGithubcopilot, SiPostman, SiReactquery, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill,RiGeminiFill,RiTeamFill } from "react-icons/ri";
 import { GiArtificialIntelligence,GiSwordClash } from "react-icons/gi";
@@ -72,14 +72,14 @@ export const mySkills = [
         skillCategory: "Web Technologies",
         skills: [
             {
-                skill: 'Html',
+                skill: 'Html5',
                 icon: <FaHtml5/>,
                 color: 'coral'
             },
             {
-                skill: 'Css',
+                skill: 'Css3',
                 icon: <FaCss3Alt/>,
-                color: 'blue'
+                color: 'deepskyblue'
             },
             {
                 skill: 'Tailwind',
@@ -171,6 +171,16 @@ export const mySkills = [
                 icon: <BiLogoVisualStudio/>,
                 color: 'dodgerblue'
             },
+        ]
+    },
+    {
+        skillCategory: "UI/UX Design",
+        skills: [
+            {
+                skill: 'Figma',
+                icon: <FaFigma/>,
+                color: 'mediumvioletred'
+            }
         ]
     },
     {
