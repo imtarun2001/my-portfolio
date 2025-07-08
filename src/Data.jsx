@@ -1,5 +1,5 @@
 import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub } from "react-icons/fa";
-import { SiRedux,SiExpress,SiAxios,SiLoopback,SiMongodb,SiGithubcopilot, SiPostman } from "react-icons/si";
+import { SiRedux,SiExpress,SiAxios,SiLoopback,SiMongodb,SiGithubcopilot, SiPostman, SiReactquery, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill,RiGeminiFill,RiTeamFill } from "react-icons/ri";
 import { GiArtificialIntelligence,GiSwordClash } from "react-icons/gi";
 import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
@@ -37,6 +37,11 @@ export const mySkills = [
                 color: 'cyan'
             },
             {
+                skill: 'React Query',
+                icon: <SiReactquery/>,
+                color: 'darkcyan'
+            },
+            {
                 skill: 'Redux',
                 icon: <SiRedux/>,
                 color: 'violet'
@@ -49,7 +54,7 @@ export const mySkills = [
             {
                 skill: 'Node.js',
                 icon: <FaNode/>,
-                color: 'lime'
+                color: 'darkgreen'
             },
             {
                 skill: 'Axios',
@@ -64,7 +69,7 @@ export const mySkills = [
         ]
     },
     {
-        skillCategory: "Web technologies",
+        skillCategory: "Web Technologies",
         skills: [
             {
                 skill: 'Html',
@@ -74,12 +79,12 @@ export const mySkills = [
             {
                 skill: 'Css',
                 icon: <FaCss3Alt/>,
-                color: 'mediumblue'
+                color: 'blue'
             },
             {
                 skill: 'Tailwind',
                 icon: <RiTailwindCssFill/>,
-                color: 'aquamarine'
+                color: 'aqua'
             }
         ]
     },
@@ -90,6 +95,11 @@ export const mySkills = [
                 skill: 'JavaScript',
                 icon: <IoLogoJavascript/>,
                 color: 'yellow'
+            },
+            {
+                skill: 'TypeScript',
+                icon: <SiTypescript/>,
+                color: 'royalblue'
             }
         ]
     },
@@ -104,7 +114,7 @@ export const mySkills = [
             {
                 skill: 'Object Oriented Programming',
                 icon: <SiLoopback/>,
-                color: 'lightseagreen'
+                color: 'black'
             },
             {
                 skill: 'Software Engineering',
@@ -139,7 +149,7 @@ export const mySkills = [
             {
                 skill: 'MongoDB',
                 icon: <SiMongodb/>,
-                color: 'springgreen'
+                color: 'rgb(0, 179, 90)'
             },
             {
                 skill: 'GitHub',
@@ -189,12 +199,12 @@ export const mySkills = [
             {
                 skill: 'Team Work',
                 icon: <RiTeamFill/>,
-                color: 'darkviolet'
+                color: 'purple'
             },
             {
                 skill: 'Time Management',
                 icon: <FcClock/>,
-                color: 'turquoise'
+                color: 'darkcyan'
             },
             {
                 skill: 'Negotiation',

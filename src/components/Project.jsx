@@ -1,4 +1,3 @@
-import React from "react";
 import { IoOpenOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 

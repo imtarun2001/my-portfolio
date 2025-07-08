@@ -1,4 +1,3 @@
-import React from 'react'
 import { TfiHandPointRight } from "react-icons/tfi";
 import { useAppContext } from '../context/AppContext';
 

@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
+import { useAppContext } from '../context/AppContext';
 import Project from './Project';
 import Titles from './Titles';
 
 function Projects() {
-  const { projects } = useContext(AppContext);
+  const { projects } = useAppContext();
 
   return (
     <div className="projects w-full flex flex-col items-center gap-6 px-4 py-8">
