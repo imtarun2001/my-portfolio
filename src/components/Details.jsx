@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { MdCall } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -10,7 +9,7 @@ import { useAppContext } from "../context/AppContext";
 import { motion } from "framer-motion";
 
 const Details = () => {
-  const { details, lightmode } = useAppContext();
+  const { details, digitalAccounts, lightmode } = useAppContext();
 
   const [showup, setShowup] = useState(false);
 
@@ -184,18 +183,16 @@ const Details = () => {
             transition={transition}
             className="flex justify-center items-center gap-[1rem] md:gap-[2rem] bg-purple-700 px-[1.2rem] py-[0.6rem] rounded-md text-[1.5rem] drop-shadow-md drop-shadow-black"
           >
-            <a
-              href="https://www.linkedin.com/in/tarun-kumar-behera-228b3b242/"
-              target="_blank"
-            >
-              <FaLinkedin className="hover:bg-white hover:text-purple-700" />
-            </a>
-            <a href="https://github.com/imtarun2001/" target="_blank">
-              <FaGithub className="hover:bg-white hover:text-purple-700 hover:rounded-md" />
-            </a>
-            <a href="https://x.com/Tarunkb2001" target="_blank">
-              <FaXTwitter className="hover:bg-white hover:text-purple-700 hover:rounded-md" />
-            </a>
+            {
+              digitalAccounts.map((digitalAccount) => (
+                <a
+                  href={digitalAccount.url}
+                  target="_blank"
+                >
+                  {digitalAccount.logo}
+                </a>
+              ))
+            }
           </motion.div>
         </div>
       </div>

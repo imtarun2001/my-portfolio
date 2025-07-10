@@ -1,15 +1,16 @@
 import { createContext, useContext, useEffect } from "react";
 import { useState } from "react"
-import { myDetails,myCertificates,myEducation,myProjects,mySkills } from "../Data"
+import { myDetails,myCertificates,myEducation,myProjects,mySkills, myDigitalAccounts } from "../Data"
 
 export const AppContext = createContext();
 
 export function AppContextProvider({children}) {
     const [details,setDetails] = useState(myDetails);
-    const [certificates,setCertificates] = useState(myCertificates);
-    const [education,setEducation] = useState(myEducation);
     const [projects,setProjects] = useState(myProjects);
     const [myskills,setMyskills] = useState(mySkills);
+    const [certificates,setCertificates] = useState(myCertificates);
+    const [education,setEducation] = useState(myEducation);
+    const [digitalAccounts,setDigitalAcounts] = useState(myDigitalAccounts);
 
     const [screenSize,setScreenSize] = useState(window.innerWidth);
     const handleResize = () => {
@@ -31,10 +32,11 @@ export function AppContextProvider({children}) {
 
     const datas = {
         details,setDetails,
-        certificates,setCertificates,
-        education,setEducation,
         projects,setProjects,
         myskills,setMyskills,
+        certificates,setCertificates,
+        education,setEducation,
+        digitalAccounts,setDigitalAcounts,
         screenSize,setScreenSize,
         lightmode,setLightmode,
         lightmodeHandler

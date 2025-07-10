@@ -1,4 +1,5 @@
-import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub, FaFigma } from "react-icons/fa";
+import { FaReact,FaNode,FaHtml5,FaCss3Alt,FaDatabase,FaGitAlt,FaGithub, FaFigma, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { SiRedux,SiExpress,SiAxios,SiLoopback,SiMongodb,SiGithubcopilot, SiPostman, SiReactquery, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill,RiGeminiFill,RiTeamFill } from "react-icons/ri";
 import { GiArtificialIntelligence,GiSwordClash } from "react-icons/gi";
@@ -9,10 +10,10 @@ import { GoVersions } from "react-icons/go";
 import { DiResponsive } from "react-icons/di";
 import { LuGitPullRequestCreateArrow } from "react-icons/lu";
 import { BiLogoVisualStudio } from "react-icons/bi";
+import ForeverUi from './assets/foreverUi.png'
 import StudyNotionUi from './assets/studynotionUi.png'
 import FitnessClubUi from './assets/fitnessclubUi.png'
 import ShoppyUi from './assets/shoppyUi.png'
-import FlipzonUi from './assets/flipzonUi.png'
 import TopCoursesUi from './assets/topcoursesUi.png'
 import KiitLogo from './assets/kiit_logo.png'
 import KiitImage from './assets/kiit_image.webp'
@@ -26,6 +27,39 @@ export const myDetails = {
     summary: "having expertise in various JavaScript libraries and frameworks with strong communication and time management skills. Passionate about building scalable and dynamic web applications and eager to contribute to real-world projects in a collaborative team environment.",
     photo: "https://res.cloudinary.com/dfg3tlyvo/image/upload/v1749289789/portfolioNewDp_bg_removed_mqdh2e.png"
 }
+
+export const myProjects = [
+    {
+        projectTitle: "Forever",
+        uiUrl: "https://forever-frontend-eight-xi.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/forever-frontend",
+        ui: ForeverUi,
+    },
+    {
+        projectTitle: "Studynotion",
+        uiUrl: "https://studynotion-seven-sand.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/studynotion",
+        ui: StudyNotionUi,
+    },
+    {
+        projectTitle: "Fitness Club",
+        uiUrl: "https://fitness-club-taruns-projects-67c133f6.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/fitness-club",
+        ui: FitnessClubUi,
+    },
+    {
+        projectTitle: "Shoppy",
+        uiUrl: "https://shoppy-taruns-projects-67c133f6.vercel.app/",
+        codeUrl: "https://github.com/imtarun2001/shoppy",
+        ui: ShoppyUi,
+    },
+    {
+        projectTitle: "Top Courses",
+        uiUrl: "https://imtarun2001.github.io/topcourses/",
+        codeUrl: "https://github.com/imtarun2001/topcourses",
+        ui: TopCoursesUi,
+    },
+];
 
 export const mySkills = [
     {
@@ -253,50 +287,6 @@ export const myCertificates = [
     },
 ];
 
-export const myProjects = [
-    {
-        projectTitle: "Studynotion",
-        uiUrl: "https://studynotion-seven-sand.vercel.app/",
-        codeUrl: "https://github.com/imtarun2001/studynotion",
-        ui: StudyNotionUi,
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Fitness Club",
-        uiUrl: "https://fitness-club-taruns-projects-67c133f6.vercel.app/",
-        codeUrl: "https://github.com/imtarun2001/fitness-club",
-        ui: FitnessClubUi,
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Shoppy",
-        uiUrl: "https://shoppy-taruns-projects-67c133f6.vercel.app/",
-        codeUrl: "https://github.com/imtarun2001/shoppy",
-        ui: ShoppyUi,
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Flipzon",
-        uiUrl: "https://flipzon-6kukuqz61-taruns-projects-67c133f6.vercel.app/",
-        codeUrl: "https://github.com/imtarun2001/flipzon",
-        ui: FlipzonUi,
-        projectDescription: ""
-    },
-    {
-        projectTitle: "Top Courses",
-        uiUrl: "https://imtarun2001.github.io/topcourses/",
-        codeUrl: "https://github.com/imtarun2001/topcourses",
-        ui: TopCoursesUi,
-        projectDescription: ""
-    },
-    // {
-    //     projectTitle: "Animals",
-    //     uiUrl: "https://imtarun2001.github.io/animalscard/",
-    //     codeUrl: "https://github.com/imtarun2001/animalscard",
-    //     ui: AnimalsUi,
-    //     projectDescription: ""
-    // }
-];
 
 export const myEducation = {
     instituteName: "Kalinga Institute of Industrial Technology (KIIT)",
@@ -307,3 +297,26 @@ export const myEducation = {
     duration: "October 2022 - April 2024",
     location: "Bhubaneshwar, Odisha"
 };
+
+export const myDigitalAccounts = [
+    {
+        platform: "GitHub",
+        url: "https://github.com/imtarun2001/",
+        logo: <FaGithub/>
+    },
+    {
+        platform: "Vercel",
+        url: "https://vercel.com/taruns-projects-67c133f6",
+        logo: <IoLogoVercel/>
+    },
+    {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/tarun-kumar-behera-228b3b242/",
+        logo: <FaLinkedin/>
+    },
+    {
+        platform: "X",
+        url: "https://x.com/Tarunkb2001",
+        logo: <FaXTwitter/>
+    },
+];
