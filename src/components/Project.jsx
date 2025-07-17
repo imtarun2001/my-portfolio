@@ -6,7 +6,7 @@ function Project({ project }) {
   const transition = {type: 'normal',duration: 1.5};
 
   return (
-    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={transition} className="flex flex-col items-center justify-center gap-[2rem] py-[2rem] px-[1rem] text-white bg-purple-900 transition duration-300 rounded-xl text-center shadow-md">
+    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={transition} className="flex flex-col items-center justify-center gap-[2rem] py-[1rem] lg:py-[2rem] px-[1rem] text-white bg-purple-500 transition duration-300 rounded-xl text-center shadow-md">
       <div className="w-1/2 text-[1rem] sm:text-[1.5rem] font-bold uppercase py-[0.5rem] bg-black rounded-xl">
         {project.projectTitle}
       </div>

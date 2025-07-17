@@ -7,6 +7,8 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { useAppContext } from "../context/AppContext";
 import { motion } from "framer-motion";
+import ownAvatar from "../assets/own_avatar.png"
+import webdev from "../assets/webdev.avif"
 
 const Details = () => {
   const { details, digitalAccounts, lightmode } = useAppContext();
@@ -19,7 +21,7 @@ const Details = () => {
 
   return (
     <div
-      className={`details w-full p-[1rem] tracking-wide flex flex-col justify-start md:justify-between items-center gap-[1rem] md:gap-[2rem] ${
+      className={`details w-full p-[1rem] tracking-wide flex flex-col justify-start md:justify-between items-center gap-[1rem] md:gap-[2rem] lg:gap-[4rem] ${
         lightmode ? `bg-white text-black` : `bg-black text-white`
       }`}
     >
@@ -35,7 +37,7 @@ const Details = () => {
               : `text-white bg-black px-[1rem] drop-shadow-lg drop-shadow-white`
           }`}
         >
-          PORT<span className="text-purple-700">FOLIO</span>
+          PORT<span className="text-purple-500 md:text-purple-700">FOLIO</span>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -47,7 +49,7 @@ const Details = () => {
             <div key={index} className="relative cursor-pointer">
               <Link to={header} spy={true} smooth={true}>
                 <div
-                  className={`hover:text-purple-700 border-b-4 ${
+                  className={`hover:text-purple-500 md:text-purple-700 border-b-4 ${
                     lightmode ? `border-b-gray-400` : `border-b-white`
                   } text-[0.7rem] sm:text-[1rem]`}
                 >
@@ -67,21 +69,26 @@ const Details = () => {
             href="Tarun_Kumar_Behera_Resume_MERN_2025.pdf"
             download="Tarun_Kumar_Behera_Resume_MERN_2025.pdf"
           >
-            <button className="flex justify-center items-center gap-[0.5rem] lg:px-[1.2rem] px-[0.5rem] py-[0.3rem] md:py-[0.6rem] bg-purple-700 text-white font-semibold md:text-[0.7rem] lg:text-[1rem] rounded-lg cursor-pointer drop-shadow-md drop-shadow-black">
+            <button className="flex justify-center items-center gap-[0.5rem] lg:px-[1.2rem] px-[0.5rem] py-[0.3rem] md:py-[0.6rem] bg-purple-500 md:bg-purple-700 text-white font-semibold md:text-[0.7rem] lg:text-[1rem] rounded-lg cursor-pointer drop-shadow-md drop-shadow-black">
               Download CV <MdOutlineFileDownload className="text-2xl" />
             </button>
           </a>
         </motion.div>
       </div>
 
+
+
+
+
+
       {/* 2nd section */}
-      <div className="w-full flex flex-col md:flex-row justify-center items-center">
-        <div className="relative w-full sm:w-1/2 flex justify-center items-center">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-10 md:gap-0">
+        <div className="relative w-full md:w-1/2 flex justify-center items-center md:border-r-2">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={transition}
-            className="h-[70%] rounded-t-full bg-purple-700 w-[45%] sm:w-[55%] absolute bottom-0"
+            className="h-[70%] rounded-t-full bg-purple-500 md:bg-purple-700 w-[45%] sm:w-[55%] absolute bottom-0"
           ></motion.div>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -98,15 +105,15 @@ const Details = () => {
             img
             src={details.photo}
             alt=""
-            className="w-1/2 md:w-2/3 translate-y-1 sm:translate-y-2"
+            className="w-2/3 translate-y-1 sm:translate-y-2"
           />
         </div>
-        <div className="w-full md:w-2/3 flex flex-col justify-center md:gap-[1rem] md:justify-start items-center">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-2.5 px-2.5">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={transition}
-            className="w-full text-center md:text-justify text-[1rem]"
+            className="text-[1rem]"
           >
             Hello Visitor 🙋‍♂️, I am
           </motion.div>
@@ -114,11 +121,11 @@ const Details = () => {
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
-            className="w-full text-center md:text-justify text-[1.3rem] sm:text-[1.7rem] md:text-[2.3rem] lg:text-[3rem] text-purple-700"
+            className="text-[1.9rem] md:text-[2.3rem] lg:text-[3rem] tracking-wide text-purple-500 md:text-purple-700"
           >
             {details.name}
           </motion.div>
-          <div className="w-full text-center md:text-justify flex flex-col md:flex-row md:justify-start justify-center items-center gap-[0.5rem]">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-1.5">
             <div className="text-[0.8rem] sm:text-[1rem]">and I am a</div>
             <div className="text-emerald-600 text-[1rem] sm:text-[1.3rem] text-nowrap">
               <TypeAnimation
@@ -142,14 +149,37 @@ const Details = () => {
               />
             </div>
           </div>
-          <div className="text-center md:text-justify text-[0.8rem] text-gray-600">
+          <div className="text-justify text-[0.8rem] text-gray-600">
             {details.summary}
           </div>
         </div>
       </div>
 
+
+
+
+
+
+      {/* testing section */}
+      <div className="w-full h-[35vh] lg:h-screen flex justify-center items-center relative">
+        <div className={`w-1/2 h-full ${lightmode ? `bg-white` : `bg-black`}`}></div>
+        <div className="w-full h-full flex flex-col justify-around items-center absolute">
+          <div className={`flex justify-center tracking-normal sm:tracking-widest lg:tracking-normal items-center text-7xl sm:text-[200px] lg:text-[300px] ${lightmode ? `text-black` : `text-white`}`}><span className="text-purple-500 md:text-purple-700">TAR</span><span>UN's</span></div>
+          <div className="w-full lg:w-3/4 flex justify-center items-center">
+            <img src={ownAvatar} alt="" className="w-1/3 lg:w-1/4 absolute right-0"/>
+          </div>
+          <div className={`flex justify-center tracking-normal sm:tracking-widest z-10 lg:tracking-widest items-center text-5xl sm:text-[140px] lg:text-[200px] ${lightmode ? `text-black` : `text-white`}`}><span>PORT</span><span className='text-purple-500 md:text-purple-700 drop-shadow-2xl drop-shadow-black'>FOLIO</span></div>
+        </div>
+        <div className="w-1/2 h-full bg-purple-500 md:bg-purple-700"></div>
+      </div>
+
+
+
+
+
+
       {/* 3rd section */}
-      <div className="w-full flex flex-col justify-center items-center sm:items-start">
+      <div className="w-full flex flex-col justify-center items-center md:items-start">
         <div
           className={`flex flex-col justify-center items-center gap-[0.5rem] px-[1rem] py-[0.6rem] rounded-md ${
             showup ? `opacity-100` : `opacity-0`
@@ -164,14 +194,14 @@ const Details = () => {
             tarunkumarbehera8249@gmail.com
           </div>
         </div>
-        <div className="w-full px-[1rem] py-[0.5rem] flex justify-between items-center text-white">
+        <div className="w-full px-[1rem] py-[0.5rem] flex flex-col md:flex-row gap-5 justify-between items-center text-white">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
           >
             <button
-              className="flex justify-center items-center gap-[0.4rem] px-[1.2rem] py-[0.6rem] bg-purple-700 font-bold rounded-lg transition duration-300 cursor-pointer drop-shadow-md drop-shadow-black"
+              className="flex justify-center items-center gap-[0.4rem] px-[1.2rem] py-[0.6rem] bg-purple-500 md:bg-purple-700 font-bold rounded-lg transition duration-300 cursor-pointer drop-shadow-md drop-shadow-black"
               onClick={() => setShowup((prev) => !prev)}
             >
               Contact me {showup ? <FaChevronUp /> : <FaChevronDown />}
@@ -181,7 +211,7 @@ const Details = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
-            className="flex justify-center items-center gap-[1rem] md:gap-[2rem] bg-purple-700 px-[1.2rem] py-[0.6rem] rounded-md text-[1.5rem] drop-shadow-md drop-shadow-black"
+            className="flex justify-center items-center gap-[1rem] md:gap-[2rem] bg-purple-500 md:bg-purple-700 px-[1.2rem] py-[0.6rem] rounded-md text-[1.5rem] drop-shadow-md drop-shadow-black"
           >
             {
               digitalAccounts.map((digitalAccount) => (

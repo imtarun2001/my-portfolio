@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
 
 @import "tailwindcss";
 
@@ -11,17 +12,14 @@
     --font-edu: "Edu AU VIC WA NT Arrows", "cursive";
     --font-pacifico: "Pacifico", "cursive";
     --font-sourcecode: "Source Code Pro", "monospace";
+    --font-libertinus: "Libertinus Mono", "monospace";
 }
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
 }
+
 
 ::-webkit-scrollbar {
     width: 0;

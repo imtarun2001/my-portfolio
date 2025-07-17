@@ -6,7 +6,7 @@ function Certificate({ certificate }) {
 
   return (
     <div className={`flex-shrink-0 w-7/8 sm:w-1/2 flex flex-col justify-between items-center gap-4 p-[1rem] rounded-xl border-2 border-purple-500 ${lightmode ? `bg-white` : `bg-black`}`}>
-      <div className="text-xl sm:text-2xl font-pacifico text-purple-700 text-center">
+      <div className="text-xl sm:text-2xl font-pacifico text-purple-500 md:text-purple-700 text-center">
         {certificate.certificateOf}
       </div>
       <img
