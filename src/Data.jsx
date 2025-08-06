@@ -53,12 +53,6 @@ export const myProjects = [
         codeUrl: "https://github.com/imtarun2001/shoppy",
         ui: ShoppyUi,
     },
-    {
-        projectTitle: "Top Courses",
-        uiUrl: "https://imtarun2001.github.io/topcourses/",
-        codeUrl: "https://github.com/imtarun2001/topcourses",
-        ui: TopCoursesUi,
-    },
 ];
 
 export const mySkills = [

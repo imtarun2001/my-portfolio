@@ -28,7 +28,7 @@ const Details = () => {
       {/* 1st section */}
       <div className="w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-[2rem] md:gap-0">
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={transition}
           className={`text-[1.4rem] md:text-[2rem] ${
@@ -88,13 +88,13 @@ const Details = () => {
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={transition}
-            className="h-[70%] rounded-t-full bg-purple-500 md:bg-purple-700 w-[45%] sm:w-[55%] absolute bottom-0"
+            className="h-full md:h-[70%] md:rounded-t-full bg-purple-500 md:bg-purple-700 w-[45%] sm:w-[55%] absolute bottom-0"
           ></motion.div>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={transition}
-            className={`h-[60%] rounded-t-full ${
+            className={`h-[80%] md:h-[60%] md:rounded-t-full ${
               lightmode ? `bg-black` : `bg-white`
             } w-[35%] sm:w-[45%] absolute bottom-0`}
           ></motion.div>
@@ -121,7 +121,7 @@ const Details = () => {
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
-            className="text-[1.9rem] md:text-[2.3rem] lg:text-[3rem] tracking-wide text-purple-500 md:text-purple-700"
+            className="text-3xl md:text-4xl lg:text-6xl tracking-wide text-purple-500 md:text-purple-700"
           >
             {details.name}
           </motion.div>
@@ -160,17 +160,26 @@ const Details = () => {
 
 
 
-      {/* testing section */}
+      {/* 3rd section */}
       <div className="w-full h-[35vh] lg:h-screen flex justify-center items-center relative">
-        <div className={`w-1/2 h-full ${lightmode ? `bg-white` : `bg-black`}`}></div>
+        {/* bg black and white */}
+        <motion.div initial={{opacity: 0, x: 200}} whileInView={{opacity: 100,x: 0}} transition={transition} className={`w-1/2 h-full ${lightmode ? `bg-white` : `bg-black`}`}></motion.div>
+
         <div className="w-full h-full flex flex-col justify-around items-center absolute">
-          <div className={`flex justify-center tracking-normal sm:tracking-widest lg:tracking-normal items-center text-7xl sm:text-[200px] lg:text-[300px] ${lightmode ? `text-black` : `text-white`}`}><span className="text-purple-500 md:text-purple-700">TAR</span><span>UN's</span></div>
-          <div className="w-full lg:w-3/4 flex justify-center items-center">
+          {/* Tarun's */}
+          <motion.div initial={{opacity: 0, y: 200}} whileInView={{opacity: 100, y: 0}} transition={transition}  className={`flex justify-center tracking-normal sm:tracking-widest lg:tracking-normal items-center z-20 text-7xl sm:text-[200px] lg:text-[300px] ${lightmode ? `text-black` : `text-white`}`}><span className="text-purple-500 md:text-purple-700">TAR</span><span>UN's</span></motion.div>
+
+          {/* avatar */}
+          <div className="w-full lg:w-3/4 flex justify-center items-center z-30">
             <img src={ownAvatar} alt="" className="w-1/3 lg:w-1/4 absolute right-0"/>
           </div>
-          <div className={`flex justify-center tracking-normal sm:tracking-widest z-10 lg:tracking-widest items-center text-5xl sm:text-[140px] lg:text-[200px] ${lightmode ? `text-black` : `text-white`}`}><span>PORT</span><span className='text-purple-500 md:text-purple-700 drop-shadow-2xl drop-shadow-black'>FOLIO</span></div>
+
+          {/* Portfolio */}
+          <motion.div initial={{opacity: 0, y: -200}} whileInView={{opacity: 100, y: 0}} transition={transition}  className={`flex justify-center tracking-normal sm:tracking-widest z-40 lg:tracking-widest items-center text-5xl sm:text-[140px] lg:text-[200px] ${lightmode ? `text-black` : `text-white`}`}><span>PORT</span><span className='text-purple-500 md:text-purple-700 drop-shadow-2xl drop-shadow-black'>FOLIO</span></motion.div>
         </div>
-        <div className="w-1/2 h-full bg-purple-500 md:bg-purple-700"></div>
+
+        {/* bg purple */}
+        <motion.div initial={{opacity: 0, x: -200}} whileInView={{opacity: 100, x: 0}} transition={transition} className="w-1/2 h-full z-10 bg-purple-500 md:bg-purple-700"></motion.div>
       </div>
 
 
@@ -178,7 +187,7 @@ const Details = () => {
 
 
 
-      {/* 3rd section */}
+      {/* 4th section */}
       <div className="w-full flex flex-col justify-center items-center md:items-start">
         <div
           className={`flex flex-col justify-center items-center gap-[0.5rem] px-[1rem] py-[0.6rem] rounded-md ${
